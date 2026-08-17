@@ -40,7 +40,7 @@ Mini-Arcade/
 ## Running Locally
 No build step needed — clone and open `index.html` in a browser.
 ```bash
-git clone <repo-url>
+git clone <[repo-url](https://github.com/RabiyaRana/Mini-Arcade-Game)>
 cd Mini-Arcade
 ```
 Then just open `index.html`.
