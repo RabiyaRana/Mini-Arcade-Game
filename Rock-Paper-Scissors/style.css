@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color:#462255 ;
+    color:#C3F3C0;
+    height:4rem;
+    text-align: center;
+    line-height: 4rem;
+}
+.choice{
+    height:170px;
+    width:170px;
+    border-radius: 50%;
+    /* so that images fit in border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+/* jesai hi image per jai tu image blur ho */
+    /* opacity:0.5; */
+    cursor: pointer;
+    background-color: black;
+}
+img{
+     height:150px;
+    width:150px;
+    /*  takai shrink images na ai */
+    object-fit: cover;
+    /* circle main convert kernai kai lia make them circle */
+border-radius: 50%;
+gap:4rem;
+}
+.choices{
+    /* images ko saath align kernai kai lia  */
+display: flex;
+justify-content:center;
+align-items: center;
+gap:3 rem;
+margin-top: 5rem;
+
+}
+.score-board {
+    display: flex;
+    flex-direction: column;    /* User row aur Comp row upar-neeche */
+    align-items: center;        /* horizontally center */
+    gap: 1rem;                   /* dono rows ke beech spacing */
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+.Scores {
+    display: flex;
+    flex-direction: row;        
+    justify-content: space-between;  
+    align-items: center;
+    width: 200px;                
+    gap: 2rem;                     
+}
+#user-score, #comp-score {
+    font-size: 3rem;
+}
+ #paper img {
+    transform: rotate(-90deg);
+   
+     
+} 
+#scissors img {
+    transform: rotate(-90deg);   /* negative = opposite direction */
+}
+ #rock img{
+    transform:rotate(-90deg) ;
+    
+
+} 
+.msg{
+    margin-top: 5rem;
+      text-align: center;
+}
+#remark
+{
+   
+    background-color: #462255;
+    color:#C3F3C0;
+    font-size: 2rem;
+     text-align: center;
+    text-align: center;
+    line-height: center;
+     align-items: center;
+    /* takai sirf specifoc part highlight hu  */
+    display: inline;
+    padding:1rem;
+    border-radius: 1rem;
+
+}
+.glow {
+    animation: glowPulse 0.6s ease;
+}
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 5px gold; }
+    50% { text-shadow: 0 0 25px gold, 0 0 40px orange; }
+    100% { text-shadow: 0 0 5px gold; }
+}
+#streak {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #462255;
+}
+.battle-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #462255;
+}
+.battle-area img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #462255;
+    object-fit: cover;
+}
+@keyframes popIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
